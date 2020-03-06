@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+Datos contacto  
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card class="card">
+
+<form no-line class="formulario" >
+  <ion-item class="formulario">
+    <ion-label  position="stacked">Numero de celular</ion-label>
+    <ion-input  type="text" [(ngModel)]="celular"   name="fullname"></ion-input>
+    </ion-item>
+
+  <ion-item class="formulario">
+  <ion-label  position="stacked">Numero de telefono fijo</ion-label>
+  <ion-input  type="text" [(ngModel)]="telefono"   name="fullname"></ion-input>
+  </ion-item>
+
+
+  <ion-item class="formulario">
+    <ion-label position="stacked">Departamento</ion-label>
+    <ion-input  type="text" [(ngModel)]="departamento"   name="fullname"></ion-input>
+  </ion-item>
+ 
+  <ion-item class="formulario">
+    <ion-label position="stacked">Ciudad</ion-label>
+    <ion-input  type="text" [(ngModel)]="ciudad"  name="fullname"></ion-input>
+  </ion-item>
+
+  <ion-item class="formulario">
+    <ion-label position="stacked">Direccion</ion-label>
+    <ion-input  type="text" [(ngModel)]="direccion"   name="fullname"></ion-input>
+  </ion-item>
+
+    <ion-button expand="block" fill="outline" (click)="suscripcion()" class="botonPequeño"> Registrase</ion-button>
+
+
+
+</form>
+</ion-card>
+</ion-content>
+
+

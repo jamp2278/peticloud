@@ -1,0 +1,26 @@
+<ion-header [translucent]="true">
+  <ion-toolbar  color="primary">
+    <ion-title class="tituloPagina">
+      Mascotas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card *ngFor="let mascota of this.mascotas" (click)="openDetailsWithQueryParams(mascota)">
+    <ion-row>
+    <ion-col> 
+         <img src={{mascota.imagen}} style="width:80px; height: 100%;" />
+    </ion-col>
+    <ion-col> 
+    <ion-card-header>
+      <ion-card-subtitle>{{mascota.raza}}</ion-card-subtitle>
+      <ion-card-title>{{mascota.nombre}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+     <span class="notificacion" *ngIf="mascota.novedades"><ion-icon class="iconAlert" name="alert-outline"></ion-icon>Alerta  </span> 
+    </ion-card-content>
+  </ion-col>
+</ion-row>
+  </ion-card>
+</ion-content>

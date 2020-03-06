@@ -1,0 +1,103 @@
+<!--<ion-header>
+  <ion-navbar>
+    <ion-title>Temo Chat Theme fo Ionic</ion-title>
+  </ion-navbar>
+</ion-header>-->
+
+
+<!--<ion-content padding>
+
+  <div id="logo" padding text-center style="padding-top: 50px;padding-bottom: 20px;">
+    <img src="./assets/lion.png" style="margin-left: 25%; margin-right: 25%; max-width: 50%;">
+  </div>
+
+  <div padding>
+    <ion-segment [(ngModel)]="opt" color="light">
+      <ion-segment-button value="ingresar">
+        Ingresar
+      </ion-segment-button>
+      <ion-segment-button value="registrarse">
+        Registrarse
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+
+  <div [ngSwitch]="opt">
+    <form (submit)="doLogin()" *ngSwitchCase="'ingresar'">
+
+      <ion-item>
+        <ion-label position="stacked">Usuario</ion-label>
+        <ion-input [(ngModel)]="account.username" name="username"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Contraseña</ion-label>
+        <ion-input type="password" name="password" [(ngModel)]="account.password"></ion-input>
+      </ion-item>
+
+
+
+
+      <ion-row style="margin-top: 10px;margin-bottom: 10px;height: 40px;">
+        <ion-button color="rgb(255 , 200 , 81)" style="background: rgb(255 , 200 , 81)" (click)="doLogin()">Entrar</ion-button> 
+      </ion-row>
+
+
+    </form>
+
+    <form (submit)="registrarse()" *ngSwitchCase="'registrarse'">
+          <ion-item>
+          <ion-label  position="stacked">Correo electronico</ion-label>
+          <ion-input type="email" [(ngModel)]="account.email" name="username"></ion-input>
+          </ion-item>
+
+          <ion-item>
+          <ion-label  position="stacked">Tu clave</ion-label>
+          <ion-input  type="password"  [(ngModel)]="account.fullname" name="fullname"></ion-input>
+          </ion-item>
+
+
+          <ion-item>
+            <ion-label position="stacked">Confirma tu clave</ion-label>
+            <ion-input  type="password"  [(ngModel)]="account.fullname" name="fullname"></ion-input>
+          </ion-item>
+          
+
+          
+
+
+          <ion-row style="margin-top: 10px;margin-bottom: 10px;height: 40px;">
+            <ion-button color="rgb(255 , 200 , 81)" style="background: rgb(255 , 200 , 81)" (click)="registrarse()">Registarse</ion-button> 
+          </ion-row>
+
+
+    </form>
+
+  </div>
+</ion-content>
+-->
+
+<ion-content class="background">
+	<ion-card class="card">
+		<ion-card-header class="card-header">
+			Peti Cloud
+		</ion-card-header>
+		<ion-card-content class="contenido">
+			<form no-line class="formulario">
+				<ion-item>
+					<ion-input type="text" [(ngModel)]="correo" placeholder="correo" name="correo" (ngModelChange)="onChange($event)" ></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="password" [(ngModel)]="password" placeholder="Contraseña" name="contraseñas" ></ion-input>
+        </ion-item>
+        <ion-button expand="block" routerLink="/registro" (click)="doLogin()">Ingresar</ion-button>
+        <ion-text style="color:white">
+          <h5>Olvido su contraseña?</h5>
+        </ion-text>
+        <ion-button expand="block" fill="outline"  (click)="registrarse()">Unirse</ion-button>
+
+
+      </form>
+    </ion-card-content>
+   
+  </ion-card>
+</ion-content> 

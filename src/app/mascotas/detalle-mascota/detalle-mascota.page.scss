@@ -1,0 +1,45 @@
+.tituloPagina{
+    text-align: center;
+  }
+
+  ion-card{
+    width:120px;
+    height: 120px;
+  }
+
+  .cardServicio{
+    width: 80%;
+    height: 130px;
+    padding-bottom: 10px;
+    
+  
+    border-radius: 20px;
+    ion-card-content{
+      margin-top: 10%;
+      margin-left: 5%;
+      margin-right: 5%;
+      
+     // margin-bottom: 25%;
+      border-radius: 20px;
+  
+      background-color: white;
+      img{
+        width: 120px;
+        height: 50px;
+        margin:auto
+      }
+     
+    
+  }
+  }
+  
+  ion-card-title{
+    margin:auto;
+    text-align: center;
+    color:white;
+    font-size: 15px;
+  }
+  
+  ion-col{
+    padding:0px
+  }

@@ -1,0 +1,52 @@
+<ion-header  [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title>
+Datos basicos    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <form>
+    <ion-item>
+    <ion-label  position="stacked">Tipo de documento</ion-label>
+    <ion-select value="cedula">
+      <ion-select-option value="cedula">Cedula</ion-select-option>
+      <ion-select-option value="tarjeta de identidad">Tarjeta de identidad</ion-select-option>
+      <ion-select-option value="pasasaporte">Pasaporte</ion-select-option>
+
+    </ion-select>
+    </ion-item>
+
+    <ion-item>
+    <ion-label  position="stacked">Numero de docuemnto</ion-label>
+    <ion-input  type="text"   name="fullname"></ion-input>
+    </ion-item>
+
+
+    <ion-item>
+      <ion-label position="stacked">Nombre</ion-label>
+      <ion-input  type="text"  name="fullname"></ion-input>
+    </ion-item>
+   
+    <ion-item>
+      <ion-label position="stacked">Apellidos</ion-label>
+      <ion-input  type="text"  name="fullname"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label position="stacked">Fecha de nacimiento</ion-label>
+      <ion-datetime value="1990-02-19" placeholder="Select Date"></ion-datetime>
+    </ion-item>
+    
+
+    
+
+
+    <ion-row style="margin-top: 10px;margin-bottom: 10px;height: 40px;">
+      <ion-button color="rgb(255 , 200 , 81)" style="background: rgb(255 , 200 , 81)" (click)="continuarRegistro()">Seguir</ion-button> 
+    </ion-row>
+
+
+</form>
+
+</ion-content>

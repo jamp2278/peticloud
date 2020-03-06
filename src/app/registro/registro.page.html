@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="primary" class="textoCentrado">
+    <ion-title>Registro</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="card">
+
+  <form no-line class="formulario">
+    <ion-item class="formulario">
+    <ion-label class="labelForm" position="stacked">Correo electronico</ion-label>
+    <ion-input class="inputForm" type="email" [(ngModel)]="email" name="email"></ion-input>
+    </ion-item>
+
+    <ion-item class="formulario">
+    <ion-label class="labelForm"  position="stacked">Ingresa tu contraseña</ion-label>
+    <ion-input class="inputForm" type="password" [(ngModel)]="password"  name="fullname"></ion-input>
+    </ion-item>
+
+
+    <ion-item class="formulario">
+      <ion-label class="labelForm" position="stacked">Confirma tu contraseña</ion-label>
+      <ion-input class="inputForm" type="password" [(ngModel)]="confPassword"  name="fullname"></ion-input>
+    </ion-item>
+    
+
+      <ion-button expand="block" fill="outline" (click)="presentModal()" class="botonPequeño"> Registrase</ion-button>
+
+
+
+</form>
+</ion-card>
+
+</ion-content>

@@ -1,0 +1,77 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar  color="primary">
+    <ion-title class="tituloPagina">
+      {{mascota[0].nombre}}
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  
+ 
+  <ion-card style="width: 90%;height: 80% ;  background: aliceblue;border-radius: 20px;">
+  <ion-row style="margin-top:5%">
+    <img src={{mascota[0].imagen}} style="height: 30%;width: 30%;margin: auto;border-radius: 10px;  box-shadow: 5px 5px 12px 7px rgb(125, 145, 189), -5px -5px 30px 7px rgb(125, 145, 182);
+    "/>
+  </ion-row>
+
+ <ion-grid>
+   <ion-row>
+    <ion-col>
+      <ion-card class="cardServicio"  style="background-color:rgba(179, 153, 153, 0.651);box-shadow: 2px 2px 8px 4px rgba(190, 159, 159, 0.651), -5px -5px 30px 7px rgba(185, 161, 161, 0.651);">
+        <ion-card-content>
+          <img src="assets/img/document.png" routerLink="historia-clinica">
+        </ion-card-content>
+        <ion-row>
+          <ion-card-title>H. clinica </ion-card-title>
+        </ion-row>
+      </ion-card>  
+     
+    </ion-col>
+    <ion-col>
+      <ion-card class="cardServicio"  style="background-color:rgba(199, 35, 35, 0.651);box-shadow: 2px 2px 8px 4px rgba(204, 108, 108, 0.651), -5px -5px 30px 7px rgba(211, 81, 81, 0.651);">
+        <ion-card-content>
+          <img src="./assets/img/servicio/cita.jpg" routerLink="citas">
+        </ion-card-content>
+        <ion-row>
+          <ion-card-title>Citas </ion-card-title>
+        </ion-row>
+      </ion-card>    
+    </ion-col>
+
+
+   </ion-row>
+   <ion-row>
+    <ion-col>
+      <ion-card class="cardServicio"  style="background-color:rgba(141, 127, 127, 0.651);box-shadow: 2px 2px 8px 4px rgba(179, 152, 152, 0.651), -5px -5px 30px 7px rgba(165, 116, 116, 0.651);">
+        <ion-card-content>
+          <img src="assets/img/diary.png" routerLink="diario">
+        </ion-card-content>
+        <ion-row>
+          <ion-card-title>Diario </ion-card-title>
+        </ion-row>
+      </ion-card> 
+      
+    </ion-col>
+    <ion-col>
+      <ion-card class="cardServicio"  style="background-color:rgba(211, 189, 65, 0.651);box-shadow: 2px 2px 8px 4px rgba(177, 187, 89, 0.651), -5px -5px 30px 7px rgba(185, 167, 61, 0.651);">
+        <ion-card-content>
+          <img src="assets/img/notification.png"routerLink="notificaciones">
+        </ion-card-content>
+        <ion-row>
+          <ion-card-title>Notificaciones </ion-card-title>
+        </ion-row>
+      </ion-card> 
+     
+    </ion-col>
+
+
+   </ion-row>
+ </ion-grid>
+</ion-card>
+<ion-row>
+  <ion-col><ion-button color="danger" style="float: left;width: 130px;--border-radius: 20px !important;" (click)="atras()">Cerrar</ion-button></ion-col>
+  <ion-col><ion-button color="warning" style="float: right;width: 130px;--border-radius: 20px !important;">Novedades</ion-button></ion-col>
+
+</ion-row>
+</ion-content>

@@ -1,0 +1,47 @@
+<ion-header [translucent]="true">
+  <ion-toolbar  color="primary">
+    <ion-title class="tituloPagina">
+      Suscripcion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" >
+  
+
+<ion-row style="margin-top: 20px;">
+      <h2 style="margin:auto">Suscripcion actual</h2>
+</ion-row>
+
+
+<ion-row>
+  <ion-card>
+    <img src={{suscripcionActual.imagen}} style="height: 100%;width: 100%;"/>
+    <div class="card-title">{{suscripcionActual.nombre}}</div>
+    <div class="card-subtitle">${{suscripcionActual.valor | number}} | 6 meses</div>
+  </ion-card>
+</ion-row>
+<ion-row>
+  <h2 style="margin:auto">Historial de suscripcion</h2>
+</ion-row>
+  <ion-row>
+  <ion-slides >
+    <ion-slide *ngFor="let suscripion of this.suscripciones" style="height: fit-content;">
+      <ion-card style="width: 180px;height: 200px;">
+        <img src={{suscripion.imagen}} style="height: 200px;width: 100%;"/>
+        <div class="card-title">{{suscripion.nombre}}</div>
+        <div class="card-subtitle">${{suscripion.valor | number}}</div>
+      </ion-card>
+    </ion-slide>
+
+   
+
+  </ion-slides>
+  
+</ion-row>
+<ion-row>
+  <ion-button color="danger" (click)="atras()" style="margin: auto;">Atras</ion-button>
+</ion-row>
+
+
+</ion-content>

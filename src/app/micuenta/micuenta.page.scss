@@ -1,0 +1,21 @@
+.boton{
+    margin-top:10px;
+    margin-bottom: 10px;
+}
+
+ion-item{
+
+    text-align: center;
+    background: aliceblue;
+}
+
+.texto{
+    text-align: center;
+    margin:auto;
+    background: aliceblue;
+ 
+}
+
+::ng-deep.item-native{
+    background: rgb(142, 192, 236) !important;
+}

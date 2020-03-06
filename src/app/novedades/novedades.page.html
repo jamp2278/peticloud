@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="primary">
+    <ion-title class="tituloPagina">
+Novedades
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+  <div style="text-align: center;">
+    <h2 >Tus mascotas</h2>
+
+  </div>
+  <ion-slides >
+    <ion-slide *ngFor="let mascota of this.mascotas" style="height: fit-content;">
+      <ion-card style="width: 80%;background: aliceblue;  box-shadow: 5px 5px 12px 7px rgb(125, 145, 189), -5px -5px 30px 7px rgb(125, 145, 182);
+      ">
+    <ion-row>      <div  style="margin:auto;margin-top: 10px;font-size: 22px;color:black">{{mascota.nombre}}</div>
+    </ion-row>
+     <ion-row>
+      <ion-card style="width: 180px;height: 200px;margin:auto;margin-bottom: 10px;">
+        <img src={{mascota.imagen}} style="width: 300px;height: 200px;"/>
+      </ion-card>
+    </ion-row>
+    <ion-row>  
+      <ion-card style="width: 100%;margin:10px;background: rgb(162, 189, 223);" >    
+        
+      <div style="margin-left:10%;font-size: 22px;color:black;">Hoy <img src="./assets/img/alert.png" style="width:10%;float:right"></div>
+      <div  style="font-size: 17px;color:white">Llevar a la veterinaria</div>
+    </ion-card>
+    </ion-row>
+    <ion-row>  
+      <ion-card style="width: 100%;margin:10px;background: rgb(114, 152, 199);">    
+      <div style="font-size: 22px;color:black;">Mañana</div>
+      <div  style="font-size: 17px;color:white">Ir a cita de control</div>
+    </ion-card>
+    </ion-row>
+    <ion-row>  
+      <ion-card style="width: 100%;margin:10px;background: rgb(94, 145, 207);">    
+      <div style="font-size: 22px;color:black;">La proxima semana</div>
+      <div  style="font-size: 17px;color:white">Ir a cita de control</div>
+    </ion-card>
+    </ion-row>
+  </ion-card>
+    </ion-slide>
+
+   
+
+  </ion-slides>
+
+</ion-content>

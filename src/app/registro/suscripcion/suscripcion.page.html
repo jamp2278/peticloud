@@ -1,0 +1,20 @@
+<ion-header [translucent]="true">
+  <ion-toolbar  color="primary">
+    <ion-title class="tituloPagina">
+      Suscripcion
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  
+
+  <ion-card *ngFor="let suscripion of this.suscripciones" (click)="openDetailsWithQueryParams(suscripion)">
+    <img src={{suscripion.imagen}} style="height: 100%;width: 100%;"/>
+    <div class="card-title">{{suscripion.nombre}}</div>
+    <div class="card-subtitle">Compra por ${{suscripion.valor | number}}</div>
+  </ion-card>
+
+
+</ion-content>
+

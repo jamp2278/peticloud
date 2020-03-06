@@ -1,0 +1,40 @@
+.textoCentrado{
+    text-align: center;
+}
+
+.botonPequeño{
+   margin-left: auto;margin-right: auto;margin-top: 20px;
+   width:200px
+
+}
+
+.inputForm{
+    text-align: center;
+}
+
+.labelForm{
+    margin-left: auto;margin-right: auto;    text-align: center;
+
+}
+
+.card{
+    margin-top: 25%;
+    margin-bottom: auto;
+    --background: rgba(0, 0, 0, 0.2);
+
+}
+
+ion-content{
+   // --background: #fff url('../../assets/img/fondo.jpg') 0 0/100%  ;
+   --background: rgba(118, 190, 96, 0.5);
+
+   background-size: cover;
+
+
+}
+
+.formulario{
+    background: transparent;
+    --background: transparent;
+    text-align: center;
+  }

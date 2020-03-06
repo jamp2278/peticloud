@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="tituloPagina">{{this.data[0].nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+  <div class="titulo textoCentro" style="margin-top: 10%;">vigencia</div>
+  <div class="subtitulo textoCentro">{{this.data[0].vigencia}}</div>
+  
+  <ion-item>
+  <ion-text color="black" style="text-align: center;">
+    <h6>{{this.data[0].descripcion}}</h6>
+  </ion-text>
+</ion-item>
+
+<ion-button class="botonPrincipal" expand="block" (click)="login()">Comprar</ion-button>
+<ion-item  >
+<img src="./../../../../assets/img/pse.png" style="width: 20%;margin-left: 25%;">
+<img src="./../../../../assets/img/Nequi.png" style="width: 30%;margin-right: 25%;">
+</ion-item>
+
+<ion-button class="botonSecundario" expand="block" color="background: rgb(185, 103, 103)" (click)="volver()">Cancelar</ion-button>
+</ion-content>

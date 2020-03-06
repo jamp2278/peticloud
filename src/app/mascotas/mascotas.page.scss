@@ -1,0 +1,37 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+ion-header{
+  color:rgb(177, 175, 55);
+}
+
+
+
+:root {
+  --ion-toolbar-color: #fff;
+  --ion-toolbar-background: rgb(19, 29, 32);
+}
+
+ion-card{
+ //background-color: rgb(106, 156, 248);
+  box-shadow: 5px 5px 12px 7px rgb(125, 145, 189), -5px -5px 30px 7px rgb(125, 145, 182);
+  background: rgb(62,100,148);
+background: linear-gradient(90deg,  aliceblue 4%, rgb(152, 187, 218) 100%);
+}
+
+ion-card-subtitle{
+  color:white
+}
+
+.iconAlert{
+  color:red
+}
+
+.notificacion{
+  color:white
+}
+
+.tituloPagina{
+  text-align: center;
+}
